@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta encoding="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proxy</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="Images"></div>
+    <div id="PricingAndPromotion"></div>
+    <div id="Overview"></div>
+    <div id="Description"></div>
+    <div id="RelatedContent"></div>
+    <div id="Traits"></div>
+    <div id="OtherPopularGames"></div>
+    <div id="Legal"></div>
+
+    <!-- <script src="http://127.0.0.1:3000"></script>
+    <script src="http://127.0.0.1:3001"></script> -->
+    <script src="http://127.0.0.1:3005/bundle.js"></script>
+    <!--<script src="http://127.0.0.1:3003"></script>
+    <script src="http://127.0.0.1:3004"></script> -->
+    <script src="http://127.0.0.1:3002/bundle.js"></script>
+    <!-- <script src="http://127.0.0.1:3006"></script>
+    <script src="http://127.0.0.1:3007"></script> -->
+    <script>
+      window.onLoad = () => {
+        ReactDOM.render(React.createElement(Traits, document.getElementById('Traits')));
+        ReactDOM.render(React.createElement(Overview, document.getElementById('Overview')));
+      };
+    </script>
+    <!-- <script defer>
+      window.onLoad = () => {};
+    </script> -->
+  </body>
+</html>
