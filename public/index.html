@@ -12,7 +12,7 @@
     <div id="Images"></div>
     <div id="PricingAndPromotion"></div>
     <div id="Overview"></div>
-    <div id="Description"></div>
+    <div id="desc"></div>
     <div id="RelatedContent"></div>
     <div id="Traits"></div>
     <div id="OtherPopularGames"></div>
@@ -21,13 +21,14 @@
     <!-- <script src="http://127.0.0.1:3000"></script>
     <script src="http://127.0.0.1:3001"></script> -->
     <script src="http://127.0.0.1:3002/bundle.js"></script>
-    <!--<script src="http://127.0.0.1:3003"></script>
-    <script src="http://127.0.0.1:3004"></script> -->
+    <script src="http://ec2-54-224-38-115.compute-1.amazonaws.com:5150/bundle/"></script>
+    <!--<script src="http://127.0.0.1:3004"></script> -->
     <script src="http://127.0.0.1:3005/bundle.js"></script>
     <!-- <script src="http://127.0.0.1:3006"></script>
     <script src="http://127.0.0.1:3007"></script> -->
     <script>
       window.onLoad = () => {
+        ReactDOM.render(React.createElement(desc, document.getElementById('desc')));
         ReactDOM.render(React.createElement(Traits, document.getElementById('Traits')));
         ReactDOM.render(React.createElement(Overview, document.getElementById('Overview')));
       };
