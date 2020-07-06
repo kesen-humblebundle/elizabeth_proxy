@@ -1,13 +1,17 @@
-# Project Name
+# Proxy for HumbleBundle FEC project
 
-> Project description
+> Project will reproduce a product page from Humble Bundle site using SOA.
+> Each team member is responsible for 2 services and one Proxy which renders
+> all services.
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+- https://github.com/KichiUeda/Chris-app-service-overview
+- https://github.com/KichiUeda/Chris-app-service-traits
+- https://github.com/KichiUeda/Rane-app-description-service
+- https://github.com/KichiUeda/Micko_App_images_service
+- https://github.com/KichiUeda/price_and_promotion
+- https://KichiUeda/other_popular_games
 
 ## Table of Contents
 
@@ -17,7 +21,10 @@
 
 ## Usage
 
-> Some usage instructions
+> npm start
+> navigate to:
+
+- https://127.0.0.1:3010
 
 ## Requirements
 
@@ -36,4 +43,3 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
-
