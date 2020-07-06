@@ -2,18 +2,17 @@ html {
   margin: 0;
   padding: 0;
   width: 100vw;
-  min-height: 100vh;
 }
 
 body {
   width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex; */
   background-color: #1b1e1b;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 /* #desc {
