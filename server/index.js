@@ -1,21 +1,21 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 const express = require('express');
 
 const app = express();
 const bodyParser = require('body-parser');
 
-app.use(express.static('public'));
+app.use('/:id', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Nothing to send yet');
+  res.send('hello');
 });
 
-app.listen(process.env.SERVER_PORT, (err) => {
+app.listen(3010, (err) => {
   if (err) {
     throw err;
   }
-  console.log('listening on port: ', process.env.SERVER_PORT);
+  console.log('listening on port: ', 3010);
 });
