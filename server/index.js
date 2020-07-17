@@ -13,9 +13,9 @@ app.get('/', (req, res) => {
   res.send('hello');
 });
 
-app.listen(3010, (err) => {
+app.listen(process.env.PROXY_PORT, (err) => {
   if (err) {
     throw err;
   }
-  console.log('listening on port: ', 3010);
+  console.log('listening on port: ', process.env.PROXY_PORT);
 });
