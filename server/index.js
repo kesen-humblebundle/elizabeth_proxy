@@ -1,4 +1,7 @@
-// require('dotenv').config();
+path = require('path');
+require('dotenv').config({
+  path: path.resolve(__dirname, "../", ".env")
+});
 
 const express = require('express');
 
@@ -13,9 +16,9 @@ app.get('/', (req, res) => {
   res.send('hello');
 });
 
-app.listen(3010, (err) => {
+app.listen(process.env.PROXY_PORT, (err) => {
   if (err) {
     throw err;
   }
-  console.log('listening on port: ', 3010);
+  console.log('listening on port: ', process.env.PROXY_PORT);
 });
