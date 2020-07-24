@@ -1,6 +1,6 @@
-path = require('path');
+const path = require('path');
 require('dotenv').config({
-  path: path.resolve(__dirname, "../", ".env")
+  path: path.resolve(__dirname, `../.env`)
 });
 
 const express = require('express');
@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('hello');
+  res.send('Please add a product_id to the url');
 });
 
 app.listen(process.env.PROXY_PORT, (err) => {
