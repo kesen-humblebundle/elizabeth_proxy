@@ -1,4 +1,5 @@
 const path = require('path');
+const cors = require('cors');
 require('dotenv').config({
   path: path.resolve(__dirname, `../.env`)
 });
@@ -11,6 +12,7 @@ const bodyParser = require('body-parser');
 app.use('/:id', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Please add a product_id to the url');
