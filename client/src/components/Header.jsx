@@ -2,14 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsPeopleCircle } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
+import { FaCaretDown } from 'react-icons/fa';
 import HeaderBottom from './HeaderBottom.jsx';
 
 const StyledWrapper = styled.div`
   background-color: #494f5c;
   position: fixed;
   display: flex;
-  flex-direction: column;
-  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+
   width: 100%;
   height: 116px;
   z-index: 100;
@@ -17,14 +19,15 @@ const StyledWrapper = styled.div`
 
 const StyledNav1 = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 14px;
+  width: 1500px;
+  flex-basis: 1500px;
+  flex-shrink: 1;
   align-items: center;
   height: 66px;
-  width: 100%;
-  padding: 0 26.25px 0 26.25px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #373c46;
+  margin-right: 26px;
+  box-sizing: content-box;
 `;
 
 const StyledImage = styled.img`
@@ -32,61 +35,69 @@ const StyledImage = styled.img`
   padding: 0 15px;
 `;
 
-const StyledSection = styled.section`
+const StyledLinksWrapper = styled.div`
   padding-right: 40px;
   margin-right: 5px;
+  display: flex;
+  align-items: center;
 `;
 
+const LinkWrapper = styled.div`
+  padding-bottom: 2px;
+`;
 const StyledLink = styled.a`
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13.25px;
+  letter-spacing: 1px;
   color: #d8d8da;
   padding: 0 13px;
   transition: color 0.1s ease-in;
+  &:nth-of-type(3) {
+    color: white;
+  }
   &:hover {
     cursor: pointer;
     color: #fff;
   }
 `;
 
-const StyledSpacer = styled.div`
+const StyledSectionRight = styled.section`
   display: flex;
-  flex-grow: 2;
-  flex-shrink: 1;
-  max-width: 400px;
-  height: 66px;
-  padding-right: 15px;
+  align-items: center;
 `;
 
 const SearchContainer = styled.div`
+  box-sizing: border-box;
   background-color: #7d828a;
   border-radius: 3px;
   display: flex;
-  flex-shrink: 1;
   width: 400px;
+  height: 43px;
   align-items: center;
   margin-right: 15px;
+  padding-right: 11px;
 `;
 
 const StyledInput = styled.input`
   color: #16181d;
   font-size: 13px;
-  height: 22px;
   width: 100%;
   padding: 11px 28px 11px 13px;
   background-color: #7d828a;
-  line-height: 1.35;
   border: none;
   border-radius: 3px;
   font-weight: bold;
   outline: none;
   &::placeholder {
     color: #4f545e;
+    font-weight: bold;
   }
 `;
 
 const StyledIcon = styled.img`
   width: 15px;
-  padding-right: 9.375px;
 `;
 
 const StyledLogIn = styled.a`
@@ -95,8 +106,9 @@ const StyledLogIn = styled.a`
   border-right: 1px solid #757880;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 0 0 15px;
+  padding: 13px 20px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   width: 143px;
@@ -106,7 +118,7 @@ const StyledLogIn = styled.a`
   color: #d8d8da;
   transition: all 0.1s ease-in;
   &:hover {
-    border: 2px solid white;
+    border-color: white;
     color: white;
   }
 `;
@@ -114,6 +126,7 @@ const StyledLogIn = styled.a`
 const StyledH4 = styled.h4`
   margin-left: 15px;
   font-size: 13.5px;
+  margin: 0;
 `;
 
 const StyledSignUp = styled.div`
@@ -132,7 +145,7 @@ const StyledSignUp = styled.div`
   letter-spacing: 1px;
   transition: all 0.1s ease-in;
   &:hover {
-    border: 2px solid white;
+    border-color: white;
     color: white;
   }
 `;
@@ -145,48 +158,69 @@ const Header = (props) => {
   return (
     <StyledWrapper>
       <StyledNav1>
-        <StyledImage
-          id="logo"
-          src="https://humblebundle-a.akamaihd.net/static/hashed/4814f84495cd679571cb94896978da3825562075.svg"
-          alt="Humble"
-        />
-        <StyledSection>
-          <StyledLink>
-            13
-            {'\u00A0'}
-            BUNDLES
-          </StyledLink>
-          <StyledLink>CHOICE</StyledLink>
-          <StyledLink>STORE</StyledLink>
-          <StyledLink>ABOUT</StyledLink>
-        </StyledSection>
-        <StyledSpacer />
-        <SearchContainer>
-          <StyledInput type="text" placeholder="Search" />
-          <StyledIcon
-            src="https://res.cloudinary.com/overview/image/upload/t_icon/v1595548753/platformicons/thickSearch_sqzkz1.png"
-            alt="search-icon"
+        <StyledLinksWrapper>
+          <StyledImage
+            id="logo"
+            src="https://humblebundle-a.akamaihd.net/static/hashed/4814f84495cd679571cb94896978da3825562075.svg"
+            alt="Humble"
           />
-        </SearchContainer>
-        <StyledLogIn>
           <IconContext.Provider
-            value={{ verticalAlign: 'bottom', color: '#d8d8da', size: '31px', marginRight: '15px' }}
+            value={{
+              size: '19px'
+            }}
           >
-            <BsPeopleCircle />
+            <StyledLink>
+              13
+              {'\u00A0'}
+              BUNDLES
+              <LinkWrapper>
+                <FaCaretDown />
+              </LinkWrapper>
+            </StyledLink>
+            <StyledLink>CHOICE</StyledLink>
+            <StyledLink>STORE</StyledLink>
+            <StyledLink>
+              ABOUT
+              <LinkWrapper>
+                <FaCaretDown />
+              </LinkWrapper>
+            </StyledLink>
           </IconContext.Provider>
-          <StyledH4>
-            LOG
-            {'\u00A0'}
-            IN
-          </StyledH4>
-        </StyledLogIn>
-        <StyledSignUp>
-          <NextStyledH4>
-            SIGN
-            {'\u00A0'}
-            UP
-          </NextStyledH4>
-        </StyledSignUp>
+        </StyledLinksWrapper>
+        {/* <StyledSpacer /> */}
+        <StyledSectionRight>
+          <SearchContainer>
+            <StyledInput type="text" placeholder="Search" />
+            <StyledIcon
+              src="https://res.cloudinary.com/overview/image/upload/t_icon/v1595548753/platformicons/thickSearch_sqzkz1.png"
+              alt="search-icon"
+            />
+          </SearchContainer>
+          <StyledLogIn>
+            <IconContext.Provider
+              value={{
+                verticalAlign: 'bottom',
+                color: '#d8d8da',
+                size: '31px',
+                marginRight: '15px'
+              }}
+            >
+              <BsPeopleCircle />
+            </IconContext.Provider>
+            <StyledH4>
+              LOG
+              {'\u00A0'}
+              IN
+            </StyledH4>
+          </StyledLogIn>
+          <StyledSignUp>
+            <NextStyledH4>
+              SIGN
+              {'\u00A0'}
+              UP
+            </NextStyledH4>
+          </StyledSignUp>
+        </StyledSectionRight>
       </StyledNav1>
       <HeaderBottom />
     </StyledWrapper>

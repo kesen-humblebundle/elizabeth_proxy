@@ -116,3 +116,23 @@ div#footer {
 /* #desc {
   width: 90vw;
 } */
+
+div#top-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1140px;
+  margin: 0 auto;
+  background: lightblue;
+}
+
+div#PriceAndPromotion {
+  width: 510px;
+  height: 400px;
+}
+div#images {
+  width: 630 px;
+  padding: 0;
+}
