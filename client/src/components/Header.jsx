@@ -74,7 +74,7 @@ const SearchContainer = styled.div`
   border-radius: 3px;
   display: flex;
   width: 400px;
-  height: 43px;
+  height: 42px;
   align-items: center;
   margin-right: 15px;
   padding-right: 11px;
@@ -97,7 +97,7 @@ const StyledInput = styled.input`
 `;
 
 const StyledIcon = styled.img`
-  width: 15px;
+  width: 16px;
 `;
 
 const StyledLogIn = styled.a`
