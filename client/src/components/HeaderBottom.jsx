@@ -29,6 +29,10 @@ const StyledLinkLeft = styled.a`
   font-weight: 300;
   letter-spacing: 1px;
   color: #d8d8da;
+  transition: color 0.1s ease-in;
+  &:hover {
+    color: white;
+  }
 `;
 
 const Orange = styled.a`
