@@ -12,7 +12,7 @@ const StyledSocial = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-start;
 `;
 
 const StyledP = styled.p`
@@ -24,6 +24,7 @@ const StyledP = styled.p`
 const StyledLangWrapper = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 `;
 
 const ArrowWrapper = styled.span`
@@ -34,7 +35,7 @@ const SocialContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 32px;
+  margin: 22px 0 32px 0;
   text-align: right;
 `;
 
@@ -42,7 +43,7 @@ const StyledSpot = styled.div`
   height: 31px;
   width: 31px;
   display: inline-block;
-  color: #2f333d;
+  color: #3b3f48;
   background: #7c828d;
   border-radius: 25px;
   margin: 2px;
@@ -54,18 +55,28 @@ const StyledSpot = styled.div`
 const StyledPNext = styled.p`
   font-size: 13.5px;
   text-align: right;
-  margin-bottom: 12px;
+  margin: 0 0 25px 0;
+  font-weight: 300;
   color: #d8dbdf;
+  line-height: 20px;
 `;
 const DotContainer = styled.span`
   margin: 5px 10px 0 8px;
+`;
+
+const FinePrintContainer = styled.div`
+  height: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 `;
 const StyledFinePrint = styled.p`
   color: #a1a7b2;
   letter-spacing: 0.4px;
   font-size: 11.5px;
   text-align: right;
-  margin: 6px 0 0 0;
+  margin: 0;
 `;
 
 const FootSocial = (props) => {
@@ -108,22 +119,24 @@ const FootSocial = (props) => {
         The Humble community has contributed over $183,000,000 to charity since 2010, making an
         amazing difference to causes all over the world.
       </StyledPNext>
-      <IconContext.Provider value={{ size: '7px' }}>
-        <StyledFinePrint>
-          Terms of Service
-          <DotContainer>
-            <GoPrimitiveDot />
-          </DotContainer>
-          Privacy Policy
-        </StyledFinePrint>
-        <StyledFinePrint>
-          Cookie Policy
-          <DotContainer>
-            <GoPrimitiveDot />
-          </DotContainer>
-          Legal Notices
-        </StyledFinePrint>
-      </IconContext.Provider>
+      <FinePrintContainer>
+        <IconContext.Provider value={{ size: '7px' }}>
+          <StyledFinePrint>
+            Terms of Service
+            <DotContainer>
+              <GoPrimitiveDot />
+            </DotContainer>
+            Privacy Policy
+          </StyledFinePrint>
+          <StyledFinePrint>
+            Cookie Policy
+            <DotContainer>
+              <GoPrimitiveDot />
+            </DotContainer>
+            Legal Notices
+          </StyledFinePrint>
+        </IconContext.Provider>
+      </FinePrintContainer>
     </StyledSocial>
   );
 };

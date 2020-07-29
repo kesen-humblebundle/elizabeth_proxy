@@ -19,9 +19,9 @@ const StyledReferChild = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 196.5px;
+  height: 191.5px;
   width: 269px;
-  margin: 0 56px 0 0;
+  margin: 5px 56px 0 0;
 `;
 
 const StyledReferMess = styled.p`
@@ -29,14 +29,15 @@ const StyledReferMess = styled.p`
   height: 57px;
   font-size: 13.5px;
   font-weight: 350;
-  margin: 0 28px 24px 0;
+  margin: 0 28px 0px 0;
   color: #a1a7b2;
 `;
 
 const StyledLink = styled.a`
   color: #ef9841;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 13px;
+  word-spacing: 0px;
 `;
 
 const FootRefer = (props) => {
