@@ -11,7 +11,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   /* display: flex; */
-  background-color: #1b1e1b;
+  background-color: #282c34;
   /* flex-direction: column;
   justify-content: center;
   align-items: center; */
@@ -117,6 +117,11 @@ div#footer {
   width: 90vw;
 } */
 
+div#titleWrapper {
+  width: 1140px;
+  overflow-x: hidden;
+  margin: auto;
+}
 div#top-container {
   display: flex;
   flex-direction: row;
@@ -125,7 +130,7 @@ div#top-container {
   align-items: flex-start;
   width: 1140px;
   margin: 0 auto;
-  background: lightblue;
+  background: #282c34;
 }
 
 div#PriceAndPromotion {
