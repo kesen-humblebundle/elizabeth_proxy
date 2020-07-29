@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledAbout = styled.div`
   height: 256.5px;
-  width: 101.5px;
+  width: 108px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,14 +19,20 @@ const StyledH2 = styled.h2`
 
 const StyledUL = styled.ul`
   list-style-type: none;
+  width: 100%;
   padding: 0;
   margin-top: 0;
 `;
 
 const StyledLi = styled.li`
-  font-size: 13px;
+  font-size: 13.5px;
+  width: 100%;
   padding: 10.5px 0;
   color: #a1a7b2;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
 `;
 const FootAbout = (props) => {
   return (

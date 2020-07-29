@@ -50,6 +50,11 @@ const StyledSpot = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  /* transition: background 0.1s ease-in; */
+  &:hover {
+    background: #a5aabb;
+    cursor: pointer;
+  }
 `;
 
 const StyledPNext = styled.p`
@@ -77,6 +82,14 @@ const StyledFinePrint = styled.p`
   font-size: 11.5px;
   text-align: right;
   margin: 0;
+`;
+
+const StyledSpan = styled.span`
+  color: #a1a7b2;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
 `;
 
 const FootSocial = (props) => {
@@ -122,18 +135,18 @@ const FootSocial = (props) => {
       <FinePrintContainer>
         <IconContext.Provider value={{ size: '7px' }}>
           <StyledFinePrint>
-            Terms of Service
+            <StyledSpan>Terms of Service</StyledSpan>
             <DotContainer>
               <GoPrimitiveDot />
             </DotContainer>
-            Privacy Policy
+            <StyledSpan>Privacy Policy</StyledSpan>
           </StyledFinePrint>
           <StyledFinePrint>
-            Cookie Policy
+            <StyledSpan>Cookie Policy</StyledSpan>
             <DotContainer>
               <GoPrimitiveDot />
             </DotContainer>
-            Legal Notices
+            <StyledSpan>Legal Notices</StyledSpan>
           </StyledFinePrint>
         </IconContext.Provider>
       </FinePrintContainer>

@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 const StyledLogo = styled.img`
   width: 86px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const StyledRefer = styled.div`
@@ -38,6 +41,9 @@ const StyledLink = styled.a`
   font-weight: 600;
   font-size: 13px;
   word-spacing: 0px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const FootRefer = (props) => {
