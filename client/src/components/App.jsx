@@ -14,14 +14,11 @@ const StyledWrapper = styled.div`
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { product_id: '/21/' };
   }
 
   componentDidMount() {
     if (window.location.pathname === '/') {
-      window.location.pathname = this.state.product_id;
-    } else {
-      this.setState({ product_id: window.location.pathname });
+      window.location.pathname = '/21';
     }
   }
 
