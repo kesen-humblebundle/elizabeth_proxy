@@ -11,15 +11,27 @@ const StyledWrapper = styled.div`
   height: 100px;
 `;
 
-const App = (props) => {
-  return (
-    <StyledWrapper>
-      <Header />
-      <Portal>
-        <Footer />
-      </Portal>
-    </StyledWrapper>
-  );
-};
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    if (window.location.pathname === '/') {
+      window.location.pathname = '/21';
+    }
+  }
+
+  render() {
+    return (
+      <StyledWrapper>
+        <Header />
+        <Portal>
+          <Footer />
+        </Portal>
+      </StyledWrapper>
+    );
+  }
+}
 
 export default App;

@@ -9,13 +9,18 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.use('/:id', express.static('public'));
+app.use(express.static('public', { fallthrough: true }));
+app.use('/:product_id', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res.send('Please add a product_id to the url');
+// app.get('/', (req, res) => {
+//   res.send('Please add a product_id to the url');
+// });
+app.get('/:product_id', (req, res) => {
+  res.status(200);
+  res.end();
 });
 
 app.listen(process.env.PROXY_PORT, (err) => {

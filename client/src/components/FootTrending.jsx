@@ -38,9 +38,9 @@ const StyledLi = styled.li`
   padding: 10.5px 0;
   width: 218px;
   color: #a1a7b2;
-  transition: color 0.1s ease-in;
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 
