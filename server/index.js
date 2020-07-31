@@ -1,5 +1,4 @@
 const path = require('path');
-const cors = require('cors');
 require('dotenv').config({
   path: path.resolve(__dirname, `../.env`)
 });
@@ -13,11 +12,7 @@ app.use(express.static('public', { fallthrough: true }));
 app.use('/:product_id', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors());
 
-// app.get('/', (req, res) => {
-//   res.send('Please add a product_id to the url');
-// });
 app.get('/:product_id', (req, res) => {
   res.status(200);
   res.end();
