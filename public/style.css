@@ -16,6 +16,8 @@ body {
 div#titleWrapper {
   width: 1140px;
   overflow-x: hidden;
+  padding-top: 70px;
+  padding-bottom: 22px;
   margin: auto;
 }
 
@@ -34,4 +36,9 @@ div#PriceAndPromotion {
   margin-bottom: 23px;
   height: 424px;
   overflow-y: hidden;
+}
+
+div#carousel {
+  margin-top: -20px;
+  margin-right: 40px;
 }
