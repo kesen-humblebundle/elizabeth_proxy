@@ -18,6 +18,7 @@ const StyledSocial = styled.div`
 const StyledP = styled.p`
   margin: 0 0 0 4px;
   font-size: 13.5px;
+  letter-spacing: 0.8px;
   color: #fff;
 `;
 
@@ -31,7 +32,7 @@ const ArrowWrapper = styled.span`
   padding-bottom: 5px;
 `;
 const SocialContainer = styled.div`
-  width: 52%;
+  width: 162px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -40,8 +41,8 @@ const SocialContainer = styled.div`
 `;
 
 const StyledSpot = styled.div`
-  height: 31px;
-  width: 31px;
+  height: 32px;
+  width: 32px;
   display: inline-block;
   color: #3b3f48;
   background: #7c828d;
@@ -64,6 +65,8 @@ const StyledPNext = styled.p`
   font-weight: 300;
   color: #d8dbdf;
   line-height: 20px;
+  width: 280px;
+  letter-spacing: 0.9px;
 `;
 const DotContainer = styled.span`
   margin: 5px 10px 0 8px;
@@ -96,7 +99,7 @@ const FootSocial = (props) => {
   return (
     <StyledSocial>
       <StyledLangWrapper>
-        <IconContext.Provider value={{ size: '14px' }}>
+        <IconContext.Provider value={{ size: '14.5px' }}>
           <FaGlobe />
         </IconContext.Provider>
         <StyledP>Language: English</StyledP>

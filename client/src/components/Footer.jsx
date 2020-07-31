@@ -12,13 +12,13 @@ const StyledWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 346.5px;
   background: #2f333d;
 `;
 
 const StyledContentWrapper = styled.div`
   max-width: 1500px;
-  height: 400px;
+  height: 346.5px;
   padding: 0 100px;
   display: flex;
   align-items: center;

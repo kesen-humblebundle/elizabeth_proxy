@@ -27,6 +27,7 @@ const StyledNav1 = styled.nav`
   align-items: center;
   height: 66px;
   margin-right: 26px;
+  padding-left: 28px;
   box-sizing: content-box;
 `;
 

@@ -28,7 +28,7 @@ const StyledReferChild = styled.div`
 `;
 
 const StyledReferMess = styled.p`
-  width: 241px;
+  width: 210px;
   height: 57px;
   font-size: 13.5px;
   font-weight: 350;
