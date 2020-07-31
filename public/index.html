@@ -5,14 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Proxy</title>
     <link href="./style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   </head>
+
   <body>
     <div id="header"></div>
 
@@ -37,17 +31,24 @@
 
     <div id="footer"></div>
 
+    <!-- Images service (3001), Legal service (3007) -->
     <script src="http://ec2-52-14-126-227.us-east-2.compute.amazonaws.com:3001/images"></script>
     <script src="http://ec2-52-14-126-227.us-east-2.compute.amazonaws.com:3007/bundle.js"></script>
-    <script src="http://ec2-3-128-28-100.us-east-2.compute.amazonaws.com:3006/bundle.js"></script>
-    <!-- <script src="http://ec2-3-129-17-68.us-east-2.compute.amazonaws.com:3002/bundle.js"></script> -->
 
+    <!-- Price and Promotion service (3006), Other Popular Games service (3007) -->
+    <script src="http://ec2-3-128-28-100.us-east-2.compute.amazonaws.com:3006/bundle.js"></script>
+    <script src="http://ec2-3-128-28-100.us-east-2.compute.amazonaws.com:3007/bundle.js"></script>
+
+    <!-- Description service (5150), Related Content service (3007) -->
     <script src="http://ec2-54-224-38-115.compute-1.amazonaws.com:5150/bundle/"></script>
     <script src="http://ec2-54-224-38-115.compute-1.amazonaws.com:3007/bundle.js"></script>
 
+    <!-- Overview/SystemRequirements service (3002), Traits service (3005); -->
+    <script src="http://ec2-3-129-17-68.us-east-2.compute.amazonaws.com:3002/bundle.js"></script>
     <script src="http://ec2-3-129-17-68.us-east-2.compute.amazonaws.com:3005/bundle.js"></script>
-    <script src="http://ec2-3-128-28-100.us-east-2.compute.amazonaws.com:3007/bundle.js"></script>
-    <script src="http://127.0.0.1:3002/bundle.js"></script>
+
+    <!-- Uncomment below urls to run Overview/SystemRequirements and Traits locally -->
+    <!-- <script src="http://127.0.0.1:3002/bundle.js"></script> -->
     <!-- <script src="http://127.0.0.1:3005/bundle.js"></script> -->
 
     <script src="./bundle.js"></script>
