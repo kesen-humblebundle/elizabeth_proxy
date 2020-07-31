@@ -35,3 +35,7 @@ div#PriceAndPromotion {
   height: 424px;
   overflow-y: hidden;
 }
+
+div#carousel {
+  margin-right: 40px;
+}
