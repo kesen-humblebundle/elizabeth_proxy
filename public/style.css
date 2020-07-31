@@ -10,112 +10,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* display: flex; */
   background-color: #282c34;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
-
-/* div#header {
-  background-color: #494f5c;
-  display: fixed;
-  width: 100%;
-}
-
-img#logo {
-  width: 99.25px;
-  padding: 0 15px;
-}
-*/
-/* nav#top { */
-/* margin: 0 auto; */
-/* display: flex;
-  justify-content: center;
-  font-size: 14px;
-  align-items: center;
-  height: 66px;
-  width: 100%;
-  border-bottom: 1px solid #373c46;
-} */
-
-/* section.top-left {
-  padding-right: 40px;
-  margin-right: 5px;
-}
-
-.top-nav-link {
-  font-weight: 600;
-  color: #d8d8da;
-  padding: 0 13px;
-}
-
-.top-nav-link:hover {
-  cursor: pointer;
-  color: #fff;
-} */
-
-/* .top-nav-link:active {
-  color: white;
-} */
-
-/* div#nav-spacer {
-  flex-grow: 2;
-  flex-shrink: 1;
-  max-width: 400px;
-  height: 66px;
-  padding-right: 15px;
-}
-
-div.search-container {
-  background-color: #7d828a;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  margin-right: 15px;
-}
-input#nav-search {
-  color: #16181d;
-  font-size: 13px;
-  height: 22px;
-  padding: 11px 28px 11px 13px;
-  background-color: #7d828a;
-  line-height: 1.35;
-  border: none;
-  border-radius: 3px;
-  font-weight: bold;
-  outline: none;
-}
-
-input#nav-search::placeholder {
-  color: #4f545e;
-}
-
-img#search-icon {
-  width: 15px;
-  padding-right: 9.375px;
-}
-
-nav#top2 {
-  height: 50px;
-  width: 100%;
-}
-
-div#top-container {
-  display: flex;
-}
-
-div#footer {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 400px;
-  background: #7d828a;
-}  */
-
-/* #desc {
-  width: 90vw;
-} */
 
 div#titleWrapper {
   width: 1140px;
@@ -127,18 +23,15 @@ div#top-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: flex-end;
   width: 1140px;
   margin: 0 auto;
   background: #282c34;
 }
 
 div#PriceAndPromotion {
-  width: 510px;
-  height: 400px;
-}
-div#images {
-  width: 630 px;
-  padding: 0;
+  margin-bottom: 21px;
+  height: 425px;
+  overflow-y: hidden;
 }
