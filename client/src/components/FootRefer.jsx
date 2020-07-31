@@ -41,6 +41,7 @@ const StyledLink = styled.a`
   font-weight: 600;
   font-size: 13px;
   word-spacing: 0px;
+  margin-top: 20px;
   &:hover {
     cursor: pointer;
   }
