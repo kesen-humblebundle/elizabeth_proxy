@@ -1,8 +1,9 @@
 # Proxy for HumbleBundle FEC project
 
-> Project will reproduce a product page from Humble Bundle site using SOA.
-> Each team member is responsible for 2 services and one Proxy which renders
-> all services.
+> This project recreates a product page from the site Humble Bundle.
+> This proxy will accept and display a javascript bundle from each team member's services
+> A total of 8 services are displayed.
+> a header and footer were created to mimic the Humble Bundle website in appearance
 
 ## Related Projects
 
