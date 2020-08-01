@@ -4,7 +4,6 @@
 > This proxy will accept and display a javascript bundle from each team member's services
 > A total of 8 services are displayed.
 > a header and footer were created to mimic the Humble Bundle website in appearance
-> links below show final product with all services rendering
 
 ## Related Projects
 
@@ -40,6 +39,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 > The html simply provides a div with an id for each service's bundle to render to.
 > The Header and Footer were done with React styled-components;
 > The server simply serves the static assets.
+> links below show final product with all services rendering
 
 - https://gyazo.com/a7ffc7ef052875ebf78efe6438dc13bf
 - https://gyazo.com/b6c9d0c8365bb63cde414c4528113922
