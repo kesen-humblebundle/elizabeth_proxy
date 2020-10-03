@@ -1,3 +1,7 @@
 node_modules
 .env
 public/bundle.js
+newrelic.js
+newrelic_agent.log
+gamesGET.csv
+gamesPOST.csv
